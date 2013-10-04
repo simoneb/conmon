@@ -1,9 +1,12 @@
 module.exports = function(config) {
+    var hostname = process.env.IP || 'localhost',
+        port = process.env.PORT ? 16025 : 9876;
+    
     config.set({
         basePath: '../',
         
-        hostname: process.env.IP || 'localhost',
-        port: process.env.PORT || 9876,
+        hostname: hostname,
+        port: port,
         
         frameworks: ['jasmine'],
 
