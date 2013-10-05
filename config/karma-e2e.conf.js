@@ -21,7 +21,7 @@ module.exports = function(config) {
         singleRun: true,
         
         proxies: {
-          '/': 'http://' + hostname + ':' + process.env.PORT || 8000 + '/'
+          '/': 'http://' + hostname + ':' + (process.env.PORT || 8000) + '/'
         },
         
         junitReporter: {
