@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+	"karma": "~0.10",
+    "karma-ng-scenario": "~0.1.0"
+  },
+  "scripts": {
+    "test": "./scripts/test.sh"
+  }
+}
