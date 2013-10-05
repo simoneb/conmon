@@ -8,7 +8,7 @@
     "karma-ng-scenario": "~0.1.0"
   },
   "scripts": {
-    "pretest": "node ./scripts/web-server.js",
+    "pretest": "node ./scripts/web-server.js & sleep 2",
     "test": "./scripts/test.sh && ./scripts/e2e-test.sh"
   }
 }
