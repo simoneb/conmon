@@ -1,13 +1,4 @@
 language: node_js
-
 before_script:
     - node ./scripts/web-server.js &
     - sleep 2
-
-after_success:
-    - mkdir gh-pages
-    - cd gh-pages
-    - git clone git@github.com:simoneb/conmon.git
-    - git checkout gh-pages
-    - cd ..
-    - rake site:publish
