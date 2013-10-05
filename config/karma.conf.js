@@ -19,6 +19,7 @@ module.exports = function(config) {
         ],
         
         autoWatch: true,
+        singleRun: process.env.CI,
         
         browsers: ['PhantomJS'],
         
