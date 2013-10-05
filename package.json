@@ -1,9 +1,14 @@
 {
+  "repository" :  { 
+    "type" : "git", 
+    "url" : "https://github.com/simoneb/conmon.git"
+  },
   "devDependencies": {
 	"karma": "~0.10",
     "karma-ng-scenario": "~0.1.0"
   },
   "scripts": {
+    "pretest": "node ./scripts/web-server.js",
     "test": "./scripts/test.sh && ./scripts/e2e-test.sh"
   }
 }
