@@ -1,3 +1,4 @@
 language: node_js
 before_script:
-    - "node ./scripts/web-server.js"
+    - node ./scripts/web-server.js &
+    - sleep 2
