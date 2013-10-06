@@ -17,4 +17,5 @@ after_success:
   - echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
   - git commit -m "Travis build ${TRAVIS_BUILD_NUMBER} pushed to gh-pages"
   - git push
+  - rm .git/credentials
     
