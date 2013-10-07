@@ -4,6 +4,10 @@ env:
 
 language: node_js
 
+branches:
+  only:
+    - master
+
 after_success:
   - git clone -b gh-pages https://github.com/simoneb/conmon.git gh-pages
   - rm -rf gh-pages/*
